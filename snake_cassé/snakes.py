@@ -30,8 +30,8 @@ class Snake:
 
     def handle_input(self, event):
         if event.key == py.K_UP:
-            self.direction = Vector2(0, -1) if self.direction != Vector2(0, 1) else self.direction
+            self.direction = Vector2(0, 1) if self.direction != Vector2(0, 1) else self.direction
         if event.key == py.K_LEFT:
-            self.direction = Vector2(-1, 0) if self.direction != Vector2(1, 0) else self.direction
+            self.direction = Vector2(1, 0) if self.direction != Vector2(1, 0) else self.direction
         # The snake only moves left and up ???
 
